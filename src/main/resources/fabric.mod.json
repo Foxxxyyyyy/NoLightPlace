@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "nolightplace",
+	"version": "${version}",
+	"name": "NoLightPlace",
+	"description": "mod.nolightplace.description",
+	"authors": [
+		"_cLicKFoX_"
+	],
+	"contact": {
+		"Telegram": "https://t.me/foxyyykk",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nolightplace/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.client.NoLightPlaceClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

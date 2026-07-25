@@ -1,0 +1,7 @@
+{
+  "key.nolightplace.lock": "Блокировка размещения источника света",
+  "category.nolightplace.general": "NoLightPlace",
+  "message.nolightplace.on": "Блокировка света: ВКЛ",
+  "message.nolightplace.off": "Блокировка света: ВЫКЛ",
+  "mod.nolightplace.description": "Теперь, держа факел или другой источник света, вы не будете случайно ставить его на землю."
+}

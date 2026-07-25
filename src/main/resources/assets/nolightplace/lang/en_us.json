@@ -1,0 +1,7 @@
+{
+  "key.nolightplace.lock": "Lock Light Placement",
+  "category.nolightplace.general": "NoLightPlace",
+  "message.nolightplace.on": "Light Placement: LOCKED",
+  "message.nolightplace.off": "Light Placement: UNLOCKED",
+  "mod.nolightplace.description": "Now, when holding a torch or other light source, you won't accidentally place it on the ground."
+}
