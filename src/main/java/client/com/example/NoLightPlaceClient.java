@@ -58,8 +58,8 @@ public class NoLightPlaceClient implements ClientModInitializer {
                 // Показываем сообщение над хотбаром
                 if (client.player != null) {
                     String msg = isLocked 
-                            ? "§cБлокировка света: ВКЛ" 
-                            : "§aБлокировка света: ВЫКЛ";
+                            ? "Блокировка размещения источника света: ВКЛ" 
+                            : "Блокировка размещения источника света: ВЫКЛ";
                     client.player.sendMessage(Text.literal(msg), true);
                 }
             }
