@@ -3,12 +3,12 @@
 	"id": "nolightplace",
 	"version": "${version}",
 	"name": "NoLightPlace",
-	"description": "mod.nolightplace.description",
+	"description": "Now, when holding a torch or other light source, you won't accidentally place it on the ground.",
 	"authors": [
 		"_cLicKFoX_"
 	],
 	"contact": {
-		"Telegram": "https://t.me/foxyyykk",
+		"homepage": "https://t.me/foxyyykk",
 		"sources": "https://github.com/Foxxxyyyyy/NoLightPlace"
 	},
 	"license": "MIT",
