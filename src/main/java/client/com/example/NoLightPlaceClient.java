@@ -29,15 +29,7 @@ public class NoLightPlaceClient implements ClientModInitializer {
             Items.SOUL_TORCH,
             Items.REDSTONE_TORCH,
             Items.LANTERN,
-            Items.SOUL_LANTERN,
-            Items.REDSTONE_LAMP,
-            Items.GLOWSTONE,
-            Items.SEA_LANTERN,
-            Items.JACK_O_LANTERN,
-            Items.SHROOMLIGHT,
-            Items.OCHRE_FROGLIGHT,
-            Items.VERDANT_FROGLIGHT,
-            Items.PEARLESCENT_FROGLIGHT
+            Items.SOUL_LANTERN
     );
 
     private static KeyBinding lockKey;
