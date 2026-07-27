@@ -18,6 +18,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import org.lwjgl.glfw.GLFW;
+import net.minecraft.util.Formatting;
 
 import java.util.Set;
 
@@ -57,10 +58,10 @@ public class NoLightPlaceClient implements ClientModInitializer {
 
                 // Показываем сообщение над хотбаром
                 if (client.player != null) {
-                    String msg = isLocked 
-                            ? "§cБлокировка размещения источника света: ВКЛ" 
-                            : "§aБлокировка размещения источника света: ВЫКЛ";
-                    client.player.sendMessage(Text.literal(msg), true);
+                    Text msg = isLocked
+                        ? Text.translatable("message.nolightplace.on").formatted(Formatting.RED)
+                        : Text.translatable("message.nolightplace.off").formatted(Formatting.GREEN);
+                    client.player.sendMessage(msg, true);
                 }
             }
         });
