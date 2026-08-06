@@ -1,6 +1,6 @@
 {
   "key.nolightplace.lock": "Блокировка размещения источника света",
-  "category.nolightplace.general": "NoLightPlace",
+  "key.category.nolightplace.general": "NoLightPlace",
   "message.nolightplace.on": "Блокировка размещения источника света: ВКЛ",
   "message.nolightplace.off": "Блокировка размещения источника света: ВЫКЛ"
 }
