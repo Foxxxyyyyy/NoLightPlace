@@ -11,7 +11,7 @@
 
 ## Установка
 1. Установите Fabric Loader для Minecraft 1.20.1–1.21.11.
-2. Скачайте версию мода под свою версию игры: [Modrinth](https://modrinth.com/mod/no-light-place), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/no-light-place) или раздел [Releases](../../releases).
+2. Скачайте версию мода под свою версию игры: [Modrinth](https://modrinth.com/mod/no-light-place), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/no-light-place) или раздел [Releases](../../releases)(не все версии).
 3. Положите `.jar` в папку `mods`.
 4. Запустите игру.
 
