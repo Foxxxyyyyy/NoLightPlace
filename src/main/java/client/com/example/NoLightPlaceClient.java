@@ -16,7 +16,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
 import org.lwjgl.glfw.GLFW;
 import net.minecraft.util.Formatting;
 
@@ -77,9 +76,9 @@ public class NoLightPlaceClient implements ClientModInitializer {
         // Перехват ПКМ в воздух (использование предмета)
         UseItemCallback.EVENT.register((player, world, hand) -> {
             if (shouldBlockPlacement(player, hand)) {
-                return TypedActionResult.fail(player.getStackInHand(hand));
+                return ActionResult.FAIL;
             }
-            return TypedActionResult.pass(player.getStackInHand(hand));
+            return ActionResult.PASS;
         });
     }
 
