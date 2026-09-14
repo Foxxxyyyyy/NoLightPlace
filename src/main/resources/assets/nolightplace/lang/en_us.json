@@ -1,6 +1,6 @@
 {
   "key.nolightplace.lock": "Lock Light Placement",
-  "category.nolightplace.general": "NoLightPlace",
+  "key.category.nolightplace.general": "NoLightPlace",
   "message.nolightplace.on": "Light Placement: LOCKED",
   "message.nolightplace.off": "Light Placement: UNLOCKED"
 }

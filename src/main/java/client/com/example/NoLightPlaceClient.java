@@ -16,7 +16,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 import net.minecraft.util.Formatting;
 
@@ -42,11 +42,15 @@ public class NoLightPlaceClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         // Регистрация клавиши
+        KeyBinding.Category category = KeyBinding.Category.create(
+            Identifier.of("nolightplace", "general")
+        );
+
         lockKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.nolightplace.lock",
-                InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_LEFT_ALT,
-                "category.nolightplace.general"
+            "key.nolightplace.lock",
+            InputUtil.Type.KEYSYM,
+            GLFW.GLFW_KEY_LEFT_ALT,
+            category
         ));
 
         // ── Слушаем тики клиента, чтобы отлавливать одиночные нажатия ──
@@ -77,9 +81,9 @@ public class NoLightPlaceClient implements ClientModInitializer {
         // Перехват ПКМ в воздух (использование предмета)
         UseItemCallback.EVENT.register((player, world, hand) -> {
             if (shouldBlockPlacement(player, hand)) {
-                return TypedActionResult.fail(player.getStackInHand(hand));
+                return ActionResult.FAIL;
             }
-            return TypedActionResult.pass(player.getStackInHand(hand));
+            return ActionResult.PASS;
         });
     }
 
