@@ -20,7 +20,7 @@
 git clone https://github.com/Foxxyxyxyxy/NoLightPlace.git
 cd NoLightPlace
 ./gradlew build
-
+```
 ## Техническая информация
 - Язык: Java, сборка Gradle (Fabric Loom)
 - Загрузчик: Fabric
